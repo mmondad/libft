@@ -6,7 +6,7 @@
 /*   By: mmondad <mmondad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 14:35:57 by mmondad           #+#    #+#             */
-/*   Updated: 2023/11/10 20:50:36 by mmondad          ###   ########.fr       */
+/*   Updated: 2023/11/13 13:05:30 by mmondad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	int				len;
-	char			*str;
-	unsigned int	i;
+	int		len;
+	char	*str;
+	int		i;
 
 	if (!s)
 		return (NULL);

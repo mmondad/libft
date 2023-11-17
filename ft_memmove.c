@@ -6,7 +6,7 @@
 /*   By: mmondad <mmondad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 17:18:00 by mmondad           #+#    #+#             */
-/*   Updated: 2023/11/03 17:48:27 by mmondad          ###   ########.fr       */
+/*   Updated: 2023/11/13 12:11:12 by mmondad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 			d[len] = s[len];
 		return (d);
 	}
-	ft_memcpy(d, s, len);
-	return (d);
+	return (ft_memcpy(d, s, len));
 }
 /*
 int main()

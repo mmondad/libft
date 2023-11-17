@@ -6,75 +6,73 @@
 /*   By: mmondad <mmondad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 17:41:27 by mmondad           #+#    #+#             */
-/*   Updated: 2023/11/11 18:14:52 by mmondad          ###   ########.fr       */
+/*   Updated: 2023/11/16 14:44:05 by mmondad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	check_sep(char const *sep, char c)
+static int	chek_set(char *set, char c)
 {
 	int	i;
 
 	i = 0;
-	while (sep[i])
+	while (set[i])
 	{
-		if (sep[i] == c)
+		if (set[i] == c)
 			return (1);
 		i++;
 	}
 	return (0);
 }
 
-static size_t	size_str(char const *s1, char const *set)
+static char	*copy(char *s, char *tab, int i, int j)
 {
-	int		i;
-	size_t	count;
+	int	d;
 
-	i = 0;
-	count = 0;
-	while (s1[i] && check_sep(set, s1[i]))
-		i++;
-	while (s1[i++])
-		count++;
-	while (check_sep(set, s1[i - 2]))
+	d = 0;
+	while (i <= j)
 	{
-		i--;
-		count--;
+		tab[d] = s[i];
+		i++;
+		d++;
 	}
-	return (count);
+	tab[d] = '\0';
+	return (tab);
 }
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	char	*str;
 	int		i;
-	int		len;
-	size_t	j;
+	int		j;
+	int		d;
+	char	*str;
 
-	if (s1 == NULL)
-		return (0);
-	len = 0;
 	i = 0;
-	j = size_str(s1, set);
-	str = malloc(size_str(s1, set) + 1);
-	if (str == NULL)
-		return (NULL);
-	while (s1[i] && check_sep(set, s1[i]))
+	j = 0;
+	d = 0;
+	if (!s1)
+		return (0);
+	while (s1[i] && chek_set((char *)set, s1[i]) == 1)
 		i++;
-	while (j--)
-	{
-		str[len] = s1[i];
-		len++;
-		i++;
-	}
-	str[len] = 0;
+	j = ft_strlen(s1) - 1;
+	while (j >= 0 && chek_set((char *)set, s1[j]) == 1)
+		j--;
+	if (j == -1)
+		j = ft_strlen((char *)s1);
+	str = malloc(j - i + 2);
+	if (str == 0)
+		return (0);
+	str = copy((char *)s1, str, i, j);
 	return (str);
 }
 /*
 int main()
 {
-	char *i = ft_strtrim(",,,aa,ahello aaaa   ", " ,");
-	printf("%s\n", i);
+	char *s1 = "aa\ta\ta\naaa\n\n\n\t";
+ 	char *s2 = "";
+ 	char *ret = ft_strtrim(s1, "a\n\t");
+	printf("myf = %s\n", ret);
 }
+
 */

@@ -6,7 +6,7 @@
 /*   By: mmondad <mmondad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 16:18:30 by mmondad           #+#    #+#             */
-/*   Updated: 2023/11/03 17:48:17 by mmondad          ###   ########.fr       */
+/*   Updated: 2023/11/13 15:14:18 by mmondad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,23 +17,17 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	size_t			i;
 	unsigned char	*s;
 	unsigned char	*d;
-	int				j;
 
 	s = (unsigned char *)src;
 	d = (unsigned char *)dst;
-	if (n == 0)
-		return (d);
 	if (!s && !d)
 		return (NULL);
 	i = 0;
-	j = 0;
-	while (s[i] && i < n)
+	while (i < n)
 	{
-		d[j] = s[i];
+		d[i] = s[i];
 		i++;
-		j++;
 	}
-	d[j] = 0;
 	return (d);
 }
 /*

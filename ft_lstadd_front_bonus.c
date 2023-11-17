@@ -1,40 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_lstadd_front_bonus.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmondad <mmondad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/31 16:04:50 by mmondad           #+#    #+#             */
-/*   Updated: 2023/11/13 12:44:59 by mmondad          ###   ########.fr       */
+/*   Created: 2023/11/14 12:53:07 by mmondad           #+#    #+#             */
+/*   Updated: 2023/11/16 14:38:34 by mmondad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(const char *s1)
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	int		i;
-	char	*cpy;
-	int		len;
-
-	len = ft_strlen(s1);
-	cpy = malloc(len + 1);
-	if (!cpy)
-		return (NULL);
-	i = 0;
-	while (s1[i])
-	{
-		cpy[i] = s1[i];
-		i++;
-	}
-	cpy[i] = 0;
-	return (cpy);
+	new->next = *lst;
+	*lst = new;
 }
 /*
-int main()
+int main(void)
 {
-	char *str = ft_strdup("hello");
-	printf("%s", str);
+	int val = 22;
+	t_list *list;
+	t_list *node1 = ft_lstnew(&val);
+	ft_lstadd_front(&list, node1);
+	
+	printf("%d\n", *(int *)(list->content));
 }
 */

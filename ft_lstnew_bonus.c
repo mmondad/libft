@@ -1,40 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_lstnew_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmondad <mmondad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/31 16:04:50 by mmondad           #+#    #+#             */
-/*   Updated: 2023/11/13 12:44:59 by mmondad          ###   ########.fr       */
+/*   Created: 2023/11/14 12:13:14 by mmondad           #+#    #+#             */
+/*   Updated: 2023/11/16 14:42:11 by mmondad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(const char *s1)
+t_list	*ft_lstnew(void *content)
 {
-	int		i;
-	char	*cpy;
-	int		len;
+	t_list	*node;
 
-	len = ft_strlen(s1);
-	cpy = malloc(len + 1);
-	if (!cpy)
+	node = malloc(sizeof(t_list));
+	if (node == NULL)
 		return (NULL);
-	i = 0;
-	while (s1[i])
-	{
-		cpy[i] = s1[i];
-		i++;
-	}
-	cpy[i] = 0;
-	return (cpy);
+	node->content = content;
+	node->next = NULL;
+	return (node);
 }
 /*
 int main()
 {
-	char *str = ft_strdup("hello");
-	printf("%s", str);
+	t_list list;
+	int val = 11;
+	t_list *node1 = ft_lstnew(&val);
+	printf("%d", *(int *)(node1->content));
 }
 */

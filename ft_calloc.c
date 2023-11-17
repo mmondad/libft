@@ -6,7 +6,7 @@
 /*   By: mmondad <mmondad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 11:37:35 by mmondad           #+#    #+#             */
-/*   Updated: 2023/11/11 19:59:39 by mmondad          ###   ########.fr       */
+/*   Updated: 2023/11/16 14:47:14 by mmondad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,29 +14,30 @@
 
 void	*ft_calloc(size_t count, size_t size)
 {
-	char	*str;
+	char	*point;
 	size_t	i;
 
-	str = malloc(count * size);
-	if (str == 0)
+	point = malloc(count * size);
+	if (point == 0)
 		return (NULL);
 	i = 0;
-	while (i < count * size) // i can use ft_bzero
+	while (i < count * size)
 	{
-		str[i] = 0;
+		point[i] = '\0';
 		i++;
 	}
-	return (str);
+	return (point);
 }
 /*
 int main()
 {
 	char *ptr = calloc(6, sizeof(char));
 	strcpy(ptr, "hello");
-	printf("%s\n", ptr);
+	printf("or = %s\n", ptr);
 	char *ptr1 = ft_calloc(6, sizeof(char));
 	strcpy(ptr1, "hello");
 	printf("%s", ptr1);
+	//i can use bzero in ln 24 _ 28
 
 }
 */
