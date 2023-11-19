@@ -6,7 +6,7 @@
 #    By: mmondad <mmondad@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/06 15:34:13 by mmondad           #+#    #+#              #
-#    Updated: 2023/11/17 16:21:19 by mmondad          ###   ########.fr        #
+#    Updated: 2023/11/19 15:32:48 by mmondad          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,6 +28,5 @@ clean:
 fclean:clean
 	rm -f $(NAME)
 re:fclean all
-bonus:$(NAME)
-	$(CC) $(CFLAGS) -c $(B_SRS)
+bonus:$(B_OBJECTS) $(OBJECTS)
 	ar rcs $(NAME) $(B_OBJECTS)
