@@ -6,7 +6,7 @@
 /*   By: mmondad <mmondad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 16:04:50 by mmondad           #+#    #+#             */
-/*   Updated: 2023/11/13 12:44:59 by mmondad          ###   ########.fr       */
+/*   Updated: 2023/11/20 13:38:13 by mmondad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,8 @@ char	*ft_strdup(const char *s1)
 /*
 int main()
 {
-	char *str = ft_strdup("hello");
+	char *s = NULL;
+	char *str = ft_strdup(s);
 	printf("%s", str);
 }
 */

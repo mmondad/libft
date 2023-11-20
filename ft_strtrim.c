@@ -6,7 +6,7 @@
 /*   By: mmondad <mmondad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 17:41:27 by mmondad           #+#    #+#             */
-/*   Updated: 2023/11/16 14:44:05 by mmondad          ###   ########.fr       */
+/*   Updated: 2023/11/20 12:56:43 by mmondad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	d = 0;
 	if (!s1)
 		return (0);
+	if (!set)
+		set = ft_strdup("");
 	while (s1[i] && chek_set((char *)set, s1[i]) == 1)
 		i++;
 	j = ft_strlen(s1) - 1;
@@ -69,10 +71,9 @@ char	*ft_strtrim(char const *s1, char const *set)
 /*
 int main()
 {
-	char *s1 = "aa\ta\ta\naaa\n\n\n\t";
- 	char *s2 = "";
- 	char *ret = ft_strtrim(s1, "a\n\t");
+	char *s1 = "aaaaaa";
+ 	char *s2 = NULL;
+ 	char *ret = ft_strtrim(s1, s2);
 	printf("myf = %s\n", ret);
 }
-
 */

@@ -6,7 +6,7 @@
 /*   By: mmondad <mmondad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 18:54:54 by mmondad           #+#    #+#             */
-/*   Updated: 2023/11/03 17:44:52 by mmondad          ###   ########.fr       */
+/*   Updated: 2023/11/20 13:08:53 by mmondad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,10 @@ void	ft_bzero(void *s, size_t n)
 /*
 int main()
 {
-	char src[20] = "hellosimo";
+	char *src = "hellosimo";
 	ft_bzero(src, 4);
 	printf("%s\n", src + 4);
 	printf("%s", src + 2);
 }
+
 */

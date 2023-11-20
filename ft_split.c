@@ -6,13 +6,13 @@
 /*   By: mmondad <mmondad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 17:43:57 by mmondad           #+#    #+#             */
-/*   Updated: 2023/11/17 16:28:28 by mmondad          ###   ########.fr       */
+/*   Updated: 2023/11/20 13:41:51 by mmondad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	free_memory(char **pp, int p)
+static void	free_memory(char **pp, int p)
 {
 	int		i;
 	char	*temp;

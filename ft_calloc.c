@@ -6,7 +6,7 @@
 /*   By: mmondad <mmondad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 11:37:35 by mmondad           #+#    #+#             */
-/*   Updated: 2023/11/18 14:27:45 by mmondad          ###   ########.fr       */
+/*   Updated: 2023/11/20 12:46:26 by mmondad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	*ft_calloc(size_t count, size_t size)
 	char	*point;
 	size_t	i;
 
+	if (count && (SIZE_MAX / count < size))
+		return (NULL);
 	point = malloc(count * size);
 	if (point == 0)
 		return (NULL);

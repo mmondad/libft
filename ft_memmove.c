@@ -6,7 +6,7 @@
 /*   By: mmondad <mmondad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 17:18:00 by mmondad           #+#    #+#             */
-/*   Updated: 2023/11/13 12:11:12 by mmondad          ###   ########.fr       */
+/*   Updated: 2023/11/20 13:00:36 by mmondad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 
 	d = (unsigned char *)dst;
 	s = (unsigned char *)src;
+	if (d == s)
+		return (d);
 	if (d > s)
 	{
 		while (len--)
@@ -31,9 +33,9 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 int main()
 {
 	char *src = "hello";
-	char dst[20];
-	char *str = memmove(dst, src, 5);
-	char *str1 = ft_memmove(dst, src, 5);
-	printf("memmove = %s\nft_memmove  = %s\n", str, str1);
+	char *dst = "hello";
+	char *str = ft_memmove(dst, src, 5);
+	//char *str1 = ft_memmove(dst, src, 5);
+	printf("memmove = %s", str);
 }
 */

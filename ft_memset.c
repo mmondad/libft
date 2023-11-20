@@ -6,7 +6,7 @@
 /*   By: mmondad <mmondad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 15:48:21 by mmondad           #+#    #+#             */
-/*   Updated: 2023/11/13 12:30:01 by mmondad          ###   ########.fr       */
+/*   Updated: 2023/11/20 13:19:16 by mmondad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,10 +31,6 @@ void	*ft_memset(void *b, int c, size_t len)
 /*
 int main()
 {
-	char ptr[] = "hello";
-	char ptr1[] = "hello";
-	char *str = memset(ptr, 'a', 3);
-	char *str1 = ft_memset(ptr1, 'a', 3);
-	printf("bot = %s\n myf = %s", str, str1);
+	//test
 }
 */
