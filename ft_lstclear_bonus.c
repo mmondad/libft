@@ -6,7 +6,7 @@
 /*   By: mmondad <mmondad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 15:50:38 by mmondad           #+#    #+#             */
-/*   Updated: 2023/11/21 18:37:35 by mmondad          ###   ########.fr       */
+/*   Updated: 2023/11/21 19:55:45 by mmondad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
 	t_list	*temp;
 
-	if (!del || !lst || !lst)
+	if (!del || !lst)
 		return ;
 	while (*lst)
 	{
