@@ -6,7 +6,7 @@
 /*   By: mmondad <mmondad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 18:26:07 by mmondad           #+#    #+#             */
-/*   Updated: 2023/11/16 15:58:33 by mmondad          ###   ########.fr       */
+/*   Updated: 2023/11/20 15:41:10 by mmondad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,10 @@
 
 void	ft_lstdelone(t_list *lst, void (*del)(void*))
 {
-	t_list	*temp;
-
 	if (!del || !lst)
 		return ;
-	if (lst)
-	{
-		temp = lst;
-		del(lst->content);
-		free(temp);
-	}
+	del(lst->content);
+	free(lst);
 }
 /*
 int main(void)

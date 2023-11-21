@@ -6,7 +6,7 @@
 /*   By: mmondad <mmondad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 16:18:30 by mmondad           #+#    #+#             */
-/*   Updated: 2023/11/20 12:54:15 by mmondad          ###   ########.fr       */
+/*   Updated: 2023/11/20 20:47:31 by mmondad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 int main()
 { 
 	char *str = "hello";
-	char *dst = "hello";
+	char *dst = "hello";dd
 	char *ss = ft_memcpy(dst, str, 4);
 	printf("%s", ss);
 }

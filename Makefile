@@ -6,7 +6,7 @@
 #    By: mmondad <mmondad@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/06 15:34:13 by mmondad           #+#    #+#              #
-#    Updated: 2023/11/19 15:32:48 by mmondad          ###   ########.fr        #
+#    Updated: 2023/11/20 20:57:39 by mmondad          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,12 +21,19 @@ CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
 all:$(NAME)
+
 $(NAME):$(OBJECTS)
+	$(CC) $(CFLAGS) -c $(SRS)
 	ar rcs $(NAME) $(OBJECTS)
+	
+bonus:$(B_OBJECTS)
+
+$(B_OBJECTS) : $(B_SRS)
+	$(CC) $(CFLAGS) -c $(B_SRS)
+	ar rcs $(NAME) $(B_OBJECTS)
+
 clean:
 	rm -f $(OBJECTS) $(B_OBJECTS)
 fclean:clean
 	rm -f $(NAME)
 re:fclean all
-bonus:$(B_OBJECTS) $(OBJECTS)
-	ar rcs $(NAME) $(B_OBJECTS)
