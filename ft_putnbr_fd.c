@@ -6,7 +6,7 @@
 /*   By: mmondad <mmondad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/11 12:21:15 by mmondad           #+#    #+#             */
-/*   Updated: 2023/11/13 15:15:01 by mmondad          ###   ########.fr       */
+/*   Updated: 2023/11/21 18:48:02 by mmondad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,11 +30,3 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putnbr_fd(n % 10, fd);
 	}
 }
-/*
-int main(void)
-{
-	int fd = open ("file.txt", O_CREAT | O_RDONLY | O_WRONLY);
-	printf("fd = %d\n", fd);
-	ft_putnbr_fd(2002, fd);
-}
-*/

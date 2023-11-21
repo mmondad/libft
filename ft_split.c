@@ -6,7 +6,7 @@
 /*   By: mmondad <mmondad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 17:43:57 by mmondad           #+#    #+#             */
-/*   Updated: 2023/11/20 13:41:51 by mmondad          ###   ########.fr       */
+/*   Updated: 2023/11/21 18:48:13 by mmondad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,10 +95,3 @@ char	**ft_split(char const *s, char c)
 	str[i] = 0;
 	return (str);
 }
-/*
-int main(void)
-{
-	char *s = NULL;
-	char **str = ft_split(s, ' ');
-}
-*/

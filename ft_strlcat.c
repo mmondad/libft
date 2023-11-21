@@ -6,7 +6,7 @@
 /*   By: mmondad <mmondad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 16:53:43 by mmondad           #+#    #+#             */
-/*   Updated: 2023/11/07 19:02:57 by mmondad          ###   ########.fr       */
+/*   Updated: 2023/11/21 18:48:37 by mmondad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,12 +31,3 @@ size_t	ft_strlcat(char *dst, char *src, size_t dstsize)
 	dst[lend + i] = 0;
 	return (lend + lens);
 }
-/*
-int main()
-{
-	char dst[20] = "hello";
-	char *src = "simo";
-	ft_strlcat(dst, src, sizeof(dst));
-	printf("%s", dst);
-}
-*/

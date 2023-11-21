@@ -6,7 +6,7 @@
 /*   By: mmondad <mmondad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 15:39:47 by mmondad           #+#    #+#             */
-/*   Updated: 2023/11/17 18:27:58 by mmondad          ###   ########.fr       */
+/*   Updated: 2023/11/21 17:56:34 by mmondad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <limits.h>
-# include <stdio.h>
-# include <string.h>
 
 typedef struct s_list
 {

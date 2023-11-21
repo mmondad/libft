@@ -6,7 +6,7 @@
 /*   By: mmondad <mmondad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 16:49:40 by mmondad           #+#    #+#             */
-/*   Updated: 2023/11/10 20:45:37 by mmondad          ###   ########.fr       */
+/*   Updated: 2023/11/21 18:47:57 by mmondad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,3 @@ void	ft_putendl_fd(char *s, int fd)
 	}
 	write(fd, "\n", 1);
 }
-/*
-int main(void)
-{
-	ft_putendl_fd("hello", 3);
-}
-*/

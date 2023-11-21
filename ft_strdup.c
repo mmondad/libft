@@ -6,7 +6,7 @@
 /*   By: mmondad <mmondad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 16:04:50 by mmondad           #+#    #+#             */
-/*   Updated: 2023/11/20 13:38:13 by mmondad          ###   ########.fr       */
+/*   Updated: 2023/11/21 18:48:24 by mmondad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,11 +31,3 @@ char	*ft_strdup(const char *s1)
 	cpy[i] = 0;
 	return (cpy);
 }
-/*
-int main()
-{
-	char *s = NULL;
-	char *str = ft_strdup(s);
-	printf("%s", str);
-}
-*/

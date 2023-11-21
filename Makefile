@@ -6,7 +6,7 @@
 #    By: mmondad <mmondad@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/06 15:34:13 by mmondad           #+#    #+#              #
-#    Updated: 2023/11/20 20:57:39 by mmondad          ###   ########.fr        #
+#    Updated: 2023/11/21 15:54:22 by mmondad          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,3 +37,5 @@ clean:
 fclean:clean
 	rm -f $(NAME)
 re:fclean all
+
+.PHONY: clean fclean re bonus all

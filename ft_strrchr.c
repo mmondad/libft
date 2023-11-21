@@ -6,7 +6,7 @@
 /*   By: mmondad <mmondad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 13:02:37 by mmondad           #+#    #+#             */
-/*   Updated: 2023/11/13 14:30:15 by mmondad          ###   ########.fr       */
+/*   Updated: 2023/11/21 18:49:01 by mmondad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,11 +29,3 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (0);
 }
-/*
-int main()
-{
-	char *str = strrchr("ayoub", 'a' + 257);
-	char *str1 = ft_strrchr("ayoub", 'a' + 257);
-	printf("strrchr = %s \n ft_strrchr = %s", str, str1);
-}
-*/

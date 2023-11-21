@@ -6,7 +6,7 @@
 /*   By: mmondad <mmondad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 17:41:27 by mmondad           #+#    #+#             */
-/*   Updated: 2023/11/20 12:56:43 by mmondad          ###   ########.fr       */
+/*   Updated: 2023/11/21 18:49:06 by mmondad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,12 +68,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	str = copy((char *)s1, str, i, j);
 	return (str);
 }
-/*
-int main()
-{
-	char *s1 = "aaaaaa";
- 	char *s2 = NULL;
- 	char *ret = ft_strtrim(s1, s2);
-	printf("myf = %s\n", ret);
-}
-*/

@@ -6,7 +6,7 @@
 /*   By: mmondad <mmondad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 15:48:21 by mmondad           #+#    #+#             */
-/*   Updated: 2023/11/20 20:48:51 by mmondad          ###   ########.fr       */
+/*   Updated: 2023/11/21 18:47:35 by mmondad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,3 @@ void	*ft_memset(void *b, int c, size_t len)
 	}
 	return (point);
 }
-/*
-int main()
-{
-	test
-}
-*/

@@ -6,7 +6,7 @@
 /*   By: mmondad <mmondad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 15:12:12 by mmondad           #+#    #+#             */
-/*   Updated: 2023/11/03 17:49:16 by mmondad          ###   ########.fr       */
+/*   Updated: 2023/11/21 18:48:55 by mmondad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,11 +29,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
-/*
-int main()
-{
-	int i  = strncmp("hello", "hellob", 6);
-	int j  = ft_strncmp("hello", "hellob", 6);
-	printf("cmp = %d\n ncmp = %d", i, j);
-}
-*/

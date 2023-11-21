@@ -6,7 +6,7 @@
 /*   By: mmondad <mmondad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 17:45:44 by mmondad           #+#    #+#             */
-/*   Updated: 2023/11/16 14:41:12 by mmondad          ###   ########.fr       */
+/*   Updated: 2023/11/21 18:51:08 by mmondad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,12 +36,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (0);
 }
-/*
-int main()
-{
-	char *str = strnstr("lorem ipsum dolor sit amet", "dolor", 15);
-	char *str1 = ft_strnstr("lorem ipsum dolor sit amet", "dolor", 15);
-	printf("bot = %s\nmyf = %s", str, str1);
-	
-}
-*/

@@ -6,7 +6,7 @@
 /*   By: mmondad <mmondad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 15:15:05 by mmondad           #+#    #+#             */
-/*   Updated: 2023/11/03 17:48:38 by mmondad          ###   ########.fr       */
+/*   Updated: 2023/11/21 18:48:19 by mmondad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,10 +29,3 @@ char	*ft_strchr(const char *s, int c)
 		return (&str[i]);
 	return (0);
 }
-/*
-int main()
-{
-	char *str = strchr("hello", 0);
-	char *str1 = ft_strchr("hello", 0);
-	printf("strchr = %s \n ft_strchr = %s", str, str1);
-}*/
