@@ -28,8 +28,27 @@ void deleteNode(t_list **head, int index)
 	ft_lstdelone(temp->next, del);
 	temp->next = next_node;
 }
-void delelte (t_list **)
-
+void delete (t_list **head, int index)
+{
+	t_list *temp = *head;
+	int i  = 1;
+	if (index == 1)
+	{
+		*head = temp->next;
+		ft_lstdelone(temp, del);
+		return ;
+	}
+	while (temp && i < index - 1)
+	{
+		temp = temp->next;
+		i++;
+	}
+	if (!temp || temp->next == NULL)
+		return;
+	t_list *n_node = temp->next->next;
+	ft_lstdelone(temp->next, del);
+	temp->next = n_node;
+}
 void print_list(t_list *lst)
 {
 	while(lst)
@@ -55,7 +74,7 @@ int main()
 		node = node->next;
 	}
 	//node = NULL;
-	deleteNode(&list, 1);
+	delete(&list, 1);
 	print_list (list);
 
 }
